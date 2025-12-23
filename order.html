@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" type="cafe-icon" href="images/logo.png">
+    <title>Order - Phone Khmer Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i><img src="images/logo.png" alt=""></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Phone Khmer Shop</span>
+                    <span class="logo-sub">Premium Smartphones</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="products.html" class="nav-link"><i class="fas fa-mobile-alt"></i> Products</a>
+                <a href="order.html" class="nav-link active"><i class="fas fa-shopping-cart"></i> Order</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i> Contact</a>
+                <div class="cart-icon">
+                    <a href="order.html" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Order Now</h1>
+            <p>Complete your purchase in just a few steps</p>
+        </div>
+    </section>
+
+    <!-- Order Process -->
+    <section class="order-process">
+        <div class="container">
+            <div class="process-steps">
+                <div class="process-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Cart</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Information</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Payment</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Confirmation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-layout">
+                <div class="cart-items">
+                    <h2>Your Cart</h2>
+                    <div class="cart-items-container" id="cartItemsContainer">
+                        <!-- Cart items will be loaded via JavaScript -->
+                        <div class="empty-cart" id="emptyCart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>Your cart is empty</h3>
+                            <p>Add products from our store to get started</p>
+                            <a href="products.html" class="btn btn-primary">Browse Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="coupon-section">
+                        <input type="text" id="couponCode" placeholder="Coupon Code">
+                        <button id="applyCoupon" class="btn btn-outline">Apply</button>
+                    </div>
+                    
+                    <button id="checkoutBtn" class="btn btn-primary btn-block" disabled>Proceed to Checkout</button>
+                    
+                    <div class="payment-methods">
+                        <p><i class="fas fa-lock"></i> Secure payment</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Form (Initially Hidden) -->
+    <section class="checkout-section" id="checkoutSection" style="display: none;">
+        <div class="container">
+            <div class="checkout-layout">
+                <div class="checkout-form">
+                    <h2>Customer Information</h2>
+                    <form id="checkoutForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Delivery Address *</label>
+                            <textarea id="address" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <select id="city" required>
+                                    <option value="">Select City</option>
+                                    <option value="phnom-penh">Phnom Penh</option>
+                                    <option value="siem-reap">Siem Reap</option>
+                                    <option value="battambang">Battambang</option>
+                                    <option value="sihanoukville">Sihanoukville</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="district">District</label>
+                                <input type="text" id="district">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">Order Notes</label>
+                            <textarea id="notes" rows="2" placeholder="Any special instructions for delivery..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Payment Method *</label>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cash" checked>
+                                    <div class="payment-content">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <span>Cash on Delivery</span>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="aba">
+                                    <div class="payment-content">
+                                        <i class="fas fa-university"></i>
+                                        <span>ABA Bank Transfer</span>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="card">
+                                    <div class="payment-content">
+                                        <i class="fas fa-credit-card"></i>
+                                        <span>Credit/Debit Card</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" id="backToCart" class="btn btn-outline">Back to Cart</button>
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="order-review">
+                    <h2>Order Review</h2>
+                    <div class="review-items" id="reviewItems">
+                        <!-- Order items will be loaded here -->
+                    </div>
+                    <div class="review-summary">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="reviewSubtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="reviewShipping">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="reviewTax">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="reviewTotal">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Confirmation (Initially Hidden) -->
+    <section class="confirmation-section" id="confirmationSection" style="display: none;">
+        <div class="container">
+            <div class="confirmation-content">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Order Confirmed!</h2>
+                <p>Thank you for your purchase. Your order has been received and is being processed.</p>
+                <div class="order-details">
+                    <div class="order-info">
+                        <p><strong>Order ID:</strong> <span id="orderId">PS-2023-00123</span></p>
+                        <p><strong>Date:</strong> <span id="orderDate">November 15, 2023</span></p>
+                        <p><strong>Total:</strong> <span id="orderTotal">$0.00</span></p>
+                        <p><strong>Payment Method:</strong> <span id="orderPayment">Cash on Delivery</span></p>
+                    </div>
+                </div>
+                <p>We will contact you shortly to confirm delivery details. You can also track your order status via our Telegram bot.</p>
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+                    <a href="https://t.me/PhoneKhmerShopBot" target="_blank" class="btn btn-telegram">
+                        <i class="fab fa-telegram-plane"></i> Track on Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Phone Khmer Shop</span>
+                            <span class="logo-sub">Premium Smartphones</span>
+                        </div>
+                    </a>
+                    <p class="footer-about">Leading smartphone retailer in Cambodia offering premium devices with authentic warranty and best customer service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#samsung">Samsung</a></li>
+                        <li><a href="products.html#iphone">iPhone</a></li>
+                        <li><a href="products.html#xiaomi">Xiaomi</a></li>
+                        <li><a href="products.html#oppo">OPPO</a></li>
+                        <li><a href="products.html#vivo">Vivo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Street 123, Phnom Penh, Cambodia</li>
+                        <li><i class="fas fa-phone"></i> +855 12 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@phonekhmershop.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Phone Khmer Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/js/telegram-bot.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" type="cafe-icon" href="images/logo.png">
+    <title>Products - Phone Khmer Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i><img src="images/logo.png" alt=""></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Phone Khmer Shop</span>
+                    <span class="logo-sub">Premium Smartphones</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                <a href="products.html" class="nav-link active"><i class="fas fa-mobile-alt"></i> Products</a>
+                <a href="order.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Order</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i> Contact</a>
+                <div class="cart-icon">
+                    <a href="order.html" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Premium smartphones from top brands with authentic warranty</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-category">
+                    <button class="filter-btn active" data-filter="all">All Brands</button>
+                    <button class="filter-btn" data-filter="samsung">Samsung</button>
+                    <button class="filter-btn" data-filter="iphone">iPhone</button>
+                    <button class="filter-btn" data-filter="xiaomi">Xiaomi</button>
+                    <button class="filter-btn" data-filter="oppo">OPPO</button>
+                    <button class="filter-btn" data-filter="vivo">Vivo</button>
+                </div>
+                
+                <div class="filter-search">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container" id="productsContainer">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Phone Khmer Shop</span>
+                            <span class="logo-sub">Premium Smartphones</span>
+                        </div>
+                    </a>
+                    <p class="footer-about">Leading smartphone retailer in Cambodia offering premium devices with authentic warranty and best customer service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#samsung">Samsung</a></li>
+                        <li><a href="products.html#iphone">iPhone</a></li>
+                        <li><a href="products.html#xiaomi">Xiaomi</a></li>
+                        <li><a href="products.html#oppo">OPPO</a></li>
+                        <li><a href="products.html#vivo">Vivo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Street 123, Phnom Penh, Cambodia</li>
+                        <li><i class="fas fa-phone"></i> +855 12 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@phonekhmershop.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Phone Khmer Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="cafe-icon" href="images/logo.png">
+    <title>Phone Khmer Shop - Premium Smartphones in Cambodia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/best.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i><img src="images/logo.png" alt=""></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Phone Khmer Shop</span>
+                    <span class="logo-sub">Premium Smartphones</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link active"><i class="fas fa-info-circle"></i> About</a>
+                <a href="products.html" class="nav-link"><i class="fas fa-mobile-alt"></i> Products</a>
+                <a href="order.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Order</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i> Contact</a>
+                <div class="cart-icon">
+                    <a href="order.html" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Latest Smartphones in Cambodia</h1>
+                <p class="hero-subtitle">Premium quality phones with authentic warranty. Best prices in Phnom Penh.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">View Products</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/logo.png" alt="Latest Smartphone" class="floating-phone" >
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+  <!-- Best Selling Products Section - Modern Redesign -->
+<section class="featured-products modern-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header modern-header">
+            <div class="header-content">
+                <div class="title-container">
+                    <span class="section-badge">🔥 Hot Deals</span>
+                    <h2 class="section-title">Best Selling <span class="gradient-text">Products</span></h2>
+                    <p class="section-subtitle">Top-rated smartphones with exclusive discounts this week</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-number">4.8</span>
+                        <span class="stat-label">Avg. Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">456+</span>
+                        <span class="stat-label">Sold Today</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modern Timer -->
+            <div class="modern-timer">
+                <div class="timer-header">
+                    <i class="fas fa-bolt"></i>
+                    <span>Flash Sale Ends In</span>
+                </div>
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <div class="time-value">23</div>
+                        <div class="time-label">Hours</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value">59</div>
+                        <div class="time-label">Minutes</div>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-unit">
+                        <div class="time-value">59</div>
+                        <div class="time-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modern Filter -->
+        <div class="modern-filter">
+            <div class="filter-scroll">
+                <button class="filter-chip active" data-filter="all">
+                    <i class="fas fa-boxes"></i> All Products
+                </button>
+                <button class="filter-chip" data-filter="bestseller">
+                    <i class="fas fa-crown"></i> Best Sellers
+                </button>
+                <button class="filter-chip" data-filter="trending">
+                    <i class="fas fa-fire"></i> Trending
+                </button>
+                <button class="filter-chip" data-filter="discount">
+                    <i class="fas fa-percentage"></i> Big Discount
+                </button>
+                <button class="filter-chip" data-filter="new">
+                    <i class="fas fa-star"></i> New Arrivals
+                </button>
+            </div>
+        </div>
+        
+        <!-- Modern Products Grid -->
+        <div class="modern-products-grid">
+            <!-- Product 1 - iPhone 14 Pro Max -->
+            <div class="modern-product-card" data-category="bestseller discount">
+                <div class="product-card-inner">
+                    <div class="product-header">
+                        <div class="product-badges">
+                            <span class="badge badge-bestseller">
+                                <i class="fas fa-trophy"></i> #1 Best Seller
+                            </span>
+                            <span class="badge badge-discount">-15% OFF</span>
+                        </div>
+                        <button class="wishlist-btn active">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-image-container">
+                        <div class="image-wrapper">
+                            <!-- Modern image with gradient overlay -->
+                            <img src="https://images.unsplash.com/photo-1664478546384-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="iPhone 14 Pro Max Deep Purple"
+                                 loading="lazy"
+                                 class="product-main-image">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="image-switcher">
+                            <button class="image-thumb active" data-image="https://images.unsplash.com/photo-1664478546384-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1664478546384-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Deep Purple">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1592810177445-d3a5766b2bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1592810177445-d3a5766b2bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Gold">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1592841200221-7cdf7304bad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1592841200221-7cdf7304bad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Space Black">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <div class="product-brand">
+                            <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple Logo" class="brand-logo">
+                            <span>Apple</span>
+                        </div>
+                        <h3 class="product-title">iPhone 14 Pro Max</h3>
+                        <p class="product-description">Dynamic Island. 48MP Main camera. All-day battery life.</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-value">4.8</span>
+                            </div>
+                            <span class="review-count">(432 reviews)</span>
+                        </div>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>A16 Bionic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-camera"></i>
+                                <span>48MP Pro</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-battery-full"></i>
+                                <span>All Day</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">
+                            <div class="current-price">
+                                <span class="price">$1,299</span>
+                                <span class="price-note">/unit</span>
+                            </div>
+                            <div class="original-price">$1,499</div>
+                            <div class="price-save">Save $200</div>
+                        </div>
+                        
+                        <div class="product-stats">
+                            <div class="stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>128 sold today</span>
+                            </div>
+                            <div class="stat stock-in">
+                                <i class="fas fa-check-circle"></i>
+                                <span>In Stock</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn-quick-view">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 - Samsung Galaxy S23 Ultra -->
+            <div class="modern-product-card" data-category="trending discount">
+                <div class="product-card-inner">
+                    <div class="product-header">
+                        <div class="product-badges">
+                            <span class="badge badge-trending">
+                                <i class="fas fa-fire"></i> 🔥 Trending
+                            </span>
+                            <span class="badge badge-discount">-18% OFF</span>
+                        </div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-image-container">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Samsung Galaxy S23 Ultra Green"
+                                 loading="lazy"
+                                 class="product-main-image">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="image-switcher">
+                            <button class="image-thumb active" data-image="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Green">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1610945265054-3e9e3e6b9b0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1610945265054-3e9e3e6b9b0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Black">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1610945264929-6e7f1c4b5c5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1610945264929-6e7f1c4b5c5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Cream">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <div class="product-brand">
+                            <img src="https://cdn-icons-png.flaticon.com/512/731/731962.png" alt="Samsung Logo" class="brand-logo">
+                            <span>Samsung</span>
+                        </div>
+                        <h3 class="product-title">Galaxy S23 Ultra</h3>
+                        <p class="product-description">200MP camera, S Pen included, Nightography</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                            <span class="review-count">(289 reviews)</span>
+                        </div>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>Snapdragon 8</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-camera"></i>
+                                <span>200MP</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-pen"></i>
+                                <span>S Pen</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">
+                            <div class="current-price">
+                                <span class="price">$1,199</span>
+                                <span class="price-note">/unit</span>
+                            </div>
+                            <div class="original-price">$1,399</div>
+                            <div class="price-save">Save $200</div>
+                        </div>
+                        
+                        <div class="product-stats">
+                            <div class="stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>96 sold today</span>
+                            </div>
+                            <div class="stat stock-low">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Only 3 left</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn-quick-view">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 - Xiaomi 13 Pro -->
+            <div class="modern-product-card" data-category="new">
+                <div class="product-card-inner">
+                    <div class="product-header">
+                        <div class="product-badges">
+                            <span class="badge badge-new">
+                                <i class="fas fa-star"></i> NEW
+                            </span>
+                        </div>
+                        <button class="wishlist-btn active">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-image-container">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Xiaomi 13 Pro White"
+                                 loading="lazy"
+                                 class="product-main-image">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="image-switcher">
+                            <button class="image-thumb active" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="White">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1598327105854-c8674faddf74?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1598327105854-c8674faddf74?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Black">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <div class="product-brand">
+                            <img src="https://cdn-icons-png.flaticon.com/512/732/732072.png" alt="Xiaomi Logo" class="brand-logo">
+                            <span>Xiaomi</span>
+                        </div>
+                        <h3 class="product-title">Xiaomi 13 Pro</h3>
+                        <p class="product-description">1" Sony IMX989, Leica optics, 120W fast charging</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-value">4.7</span>
+                            </div>
+                            <span class="review-count">(156 reviews)</span>
+                        </div>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>SD 8 Gen 2</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-camera"></i>
+                                <span>Leica 1"</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bolt"></i>
+                                <span>120W Charge</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">
+                            <div class="current-price">
+                                <span class="price">$899</span>
+                                <span class="price-note">/unit</span>
+                            </div>
+                            <div class="original-price">$999</div>
+                            <div class="price-save">Save $100</div>
+                        </div>
+                        
+                        <div class="product-stats">
+                            <div class="stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>87 sold today</span>
+                            </div>
+                            <div class="stat stock-in">
+                                <i class="fas fa-check-circle"></i>
+                                <span>In Stock</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn-quick-view">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 - Google Pixel 7 Pro -->
+            <div class="modern-product-card" data-category="discount">
+                <div class="product-card-inner">
+                    <div class="product-header">
+                        <div class="product-badges">
+                            <span class="badge badge-flash">
+                                <i class="fas fa-bolt"></i> FLASH SALE
+                            </span>
+                            <span class="badge badge-discount">-22% OFF</span>
+                        </div>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-image-container">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1611472173362-3f53dbd65d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Google Pixel 7 Pro Hazel"
+                                 loading="lazy"
+                                 class="product-main-image">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="image-switcher">
+                            <button class="image-thumb active" data-image="https://images.unsplash.com/photo-1611472173362-3f53dbd65d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1611472173362-3f53dbd65d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Hazel">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1610945265054-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1610945265054-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Snow">
+                            </button>
+                            <button class="image-thumb" data-image="https://images.unsplash.com/photo-1610945264929-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80">
+                                <img src="https://images.unsplash.com/photo-1610945264929-d57ffe74a78c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Obsidian">
+                            </button>
+                        </div>
+                    </div>
+                    
+                <div class="product-content">
+                        <div class="product-brand">
+                            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google Logo" class="brand-logo">
+                            <span>Google</span>
+                        </div>
+                        <h3 class="product-title">Pixel 7 Pro</h3>
+                        <p class="product-description">Google Tensor G2, Magic Eraser, 5x telephoto</p>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">4.9</span>
+                            </div>
+                            <span class="review-count">(203 reviews)</span>
+                        </div>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <span>Tensor G2</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-camera"></i>
+                                <span>50MP</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-magic"></i>
+                                <span>Magic Eraser</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">
+                            <div class="current-price">
+                                <span class="price">$799</span>
+                                <span class="price-note">/unit</span>
+                            </div>
+                            <div class="original-price">$999</div>
+                            <div class="price-save">Save $200</div>
+                        </div>
+                        
+                        <div class="product-stats">
+                            <div class="stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>145 sold today</span>
+                            </div>
+                            <div class="stat stock-in">
+                                <i class="fas fa-check-circle"></i>
+                                <span>In Stock</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn-quick-view">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View More Button -->
+        <div class="view-more-container">
+            <a href="products.html" class="btn-view-more">
+                View All Products
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Authentic Warranty</h3>
+                    <p>All products come with official warranty from distributors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Free delivery in Phnom Penh within 2 hours.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer service is always ready to help you.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo-alt"></i>
+                    </div>
+                    <h3>7-Day Return</h3>
+                    <p>Easy return policy within 7 days of purchase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram Bot Section -->
+    <section class="telegram-section">
+        <div class="container">
+            <div class="telegram-content">
+                <div class="telegram-icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+                <div class="telegram-text">
+                    <h2>Get Updates via Telegram</h2>
+                    <p>Join our Telegram bot to receive latest offers, new arrivals, and exclusive discounts directly on your phone.</p>
+                    <a href="https://t.me/PhoneKhmerShopBot" target="_blank" class="btn btn-telegram">
+                        <i class="fab fa-telegram-plane"></i> Join Telegram Bot
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">Phone Khmer Shop</span>
+                            <span class="logo-sub">Premium Smartphones</span>
+                        </div>
+                    </a>
+                    <p class="footer-about">Leading smartphone retailer in Cambodia offering premium devices with authentic warranty and best customer service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html#samsung">Samsung</a></li>
+                        <li><a href="products.html#iphone">iPhone</a></li>
+                        <li><a href="products.html#xiaomi">Xiaomi</a></li>
+                        <li><a href="products.html#oppo">OPPO</a></li>
+                        <li><a href="products.html#vivo">Vivo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Street 123, Phnom Penh, Cambodia</li>
+                        <li><i class="fas fa-phone"></i> +855 12 345 678</li>
+                        <li><i class="fas fa-envelope"></i> info@phonekhmershop.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Phone Khmer Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+     <script src="js/best.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
